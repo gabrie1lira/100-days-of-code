@@ -1,0 +1,77 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Android";
+  src: url("../Android.ttf") format("truetype");
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+    text-align: center;
+}
+
+div div {
+    background: #3DDC84;  
+}
+
+#cabeca{
+    width: 200px;
+    height: 100px;
+    border-radius: 220px 220px 0 0;
+    position: relative;
+}
+
+#cabeca:hover{
+  padding: 20px;
+  transition: 0.5s;
+  transition-timing-function: ease;
+}
+
+#cabeca #antena1{   
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    top: -20px;
+    left: 50px;
+    border-radius: 3px;
+    transform: rotate(-30deg);
+}
+
+#cabeca #antena2{   
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    top: -20px;
+    right: 50px;
+    border-radius: 3px;
+    transform: rotate(30deg);
+}
+
+#cabeca #olho1, #cabeca #olho2{
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 100%;
+}
+
+#cabeca #olho2{
+  margin-left:90px;
+  background: white;
+}
+
+h1{
+  background: lightgrey;
+  font-family: "Android";
+  color: gray;
+  border-bottom: 120px solid #3DDC84;
+  border-radius: 0 0 50px 50px;
+}
