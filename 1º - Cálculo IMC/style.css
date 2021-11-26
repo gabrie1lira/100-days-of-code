@@ -1,0 +1,12 @@
+#container{
+    background-color: black;
+    color: green;
+    display: flex;
+    justify-content: center;
+}
+
+#bloco1{
+    text-align: center;
+    margin: 10%;
+    font-size: 30px;
+}
