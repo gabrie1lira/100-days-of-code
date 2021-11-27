@@ -1,0 +1,80 @@
+<a href="https://www.google.com">
+    <img src="img/1.jpg" width="100%">
+</a>
+
+<h1 style="text-align: center;">Um pequeno passo para algo grande...</h1>
+
+<form action="/subscribe" method="post" style="text-align: center;">
+   
+    <fieldset>
+    <legend>Sexo</legend>
+   <label>Homem
+   <input type="radio" name="Sexo" value="Homem">
+   </label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Naturalidade</legend>
+            <Label>
+                Brasileiro
+                <input type="checkbox" name="naturalidade" value="Brasileiro">
+            </Label>
+
+            <Label>
+                Gringo
+                <input type="checkbox" name="naturalidade" value="gringo">
+            </Label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados</legend>
+            <p>
+                Primeiro nome:
+                <input type="text" name="Dados" placeholder="Primeiro nome">
+            </p>
+
+            <p>
+                País:
+                <select name="pais">
+                    <option value="BR">Brasil</option>
+                    <option value="US">EUA</option>
+                    <option value="RU">URSS</option>
+                    <option value="FR">Frânça</option>
+                </select>
+
+            </p>
+
+            <p>
+                email:
+                <input type="email" name="email" placeholder="Doido@ze.cu">
+            </p>
+
+            <p>
+                Telefone:
+                <input type="number" name="Telefone" disabled>
+            </p>
+
+            <p>
+                senha:
+                <input type="password" name="senha">
+            </p>
+
+            <p>
+                Comentários:
+                <textarea name="comentario" minlength="25" maxlength="400" placeholder="Mande uma mensagem para anós">
+
+                </textarea>
+
+            </p>
+            
+            <p>
+                Aceito os termos <input type="checkbox" required>
+            </p>
+
+            <input type="submit" value="enviar">
+            <input type="reset" value="apagar tudo">
+
+        </fieldset>
+    
+</form>
+

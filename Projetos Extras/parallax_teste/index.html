@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Parallax</title>
+
+    <style type="text/css">
+        body, html{
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            color: #777;
+            height: 100%;
+        }
+        
+        .conteudo{
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+
+        h3{
+            text-transform: uppercase;
+            color: #111;
+            text-align: center;
+        }
+
+        /* Efeito Parallax */
+
+        .caixa1, .caixa2, .caixa3, .caixa4{
+            height: 100%;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .caixa1{
+            background-image: url(imagens/imagem1.jpg);
+        }
+
+        .caixa2{
+            background-image: url(imagens/imagem2.jpg);
+
+        }
+        
+        .caixa3{
+            background-image: url(imagens/imagem3.jpg);
+
+        }
+        
+        .caixa4{
+            background-image: url(imagens/imagem4.jpg);
+
+        }
+
+        .conteudo-titulo{
+            position: absolute;
+            left: 0%;
+            top: 45%;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Essa nova class fará com que todo o conteúdo centralize
+        porque o .conteudo-titulo tera 100% do tamanho da tela 
+        e sendo assim o span terá um text-text-align center dentro
+        desta caixa de 100% da tela */
+        .conteudo-titulo span.titulo{
+            background-color: #111;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">Conteúdo 1</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ullam laborum obcaecati placeat ratione hic illum est ipsam accusantium, at impedit odio ducimus quo, itaque illo voluptas dolorum qui rerum?
+        Tempora labore distinctio sit magni illum quia tempore veritatis? Consequuntur, soluta? Sit facere labore, ex, recusandae blanditiis animi reiciendis explicabo libero hic quam nemo necessitatibus, repellendus aut! Quam, ratione explicabo?
+        Voluptate mollitia perferendis similique atque harum illo a, error magni iusto eligendi molestias debitis assumenda ex, perspiciatis dolor quibusdam? Nisi unde, culpa earum adipisci quidem nobis cupiditate beatae officiis expedita?</p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">Conteúdo 2</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ullam laborum obcaecati placeat ratione hic illum est ipsam accusantium, at impedit odio ducimus quo, itaque illo voluptas dolorum qui rerum?
+        Tempora labore distinctio sit magni illum quia tempore veritatis? Consequuntur, soluta? Sit facere labore, ex, recusandae blanditiis animi reiciendis explicabo libero hic quam nemo necessitatibus, repellendus aut! Quam, ratione explicabo?
+        Voluptate mollitia perferendis similique atque harum illo a, error magni iusto eligendi molestias debitis assumenda ex, perspiciatis dolor quibusdam? Nisi unde, culpa earum adipisci quidem nobis cupiditate beatae officiis expedita?</p>
+    </div>
+
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">Conteúdo 3</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <h3>Parallax</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus ullam laborum obcaecati placeat ratione hic illum est ipsam accusantium, at impedit odio ducimus quo, itaque illo voluptas dolorum qui rerum?
+        Tempora labore distinctio sit magni illum quia tempore veritatis? Consequuntur, soluta? Sit facere labore, ex, recusandae blanditiis animi reiciendis explicabo libero hic quam nemo necessitatibus, repellendus aut! Quam, ratione explicabo?
+        Voluptate mollitia perferendis similique atque harum illo a, error magni iusto eligendi molestias debitis assumenda ex, perspiciatis dolor quibusdam? Nisi unde, culpa earum adipisci quidem nobis cupiditate beatae officiis expedita?</p>
+    </div>
+
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">Conteúdo 4</span>
+        </div>
+    </div>
+
+</body>
+</html>

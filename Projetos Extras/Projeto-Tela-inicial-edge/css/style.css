@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background: url(../img/logo-microsoft-4096.png) no-repeat center/36.6% #F2F2F2;
+    background-position: top -35px center; */
+    background-image: url(../img/logo-microsoft-4096.png);
+    background-color: #F2F2F2;
+    background-repeat: no-repeat;
+    background-position: center top 20%;
+    background-size: 250px;
+}
+
+#container{
+    margin: 42px 0;
+}
+
+#bars{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 6%;
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+}
+
+#bars i{
+    cursor: pointer;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+section #find{
+    line-height: 47px;
+    width: 47%;
+    border: none;
+    box-shadow: 1px 1px 3px gray;
+    text-indent: 10px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+section #find:focus{
+    outline: none;
+}
+
+section #button{
+    background-color: #0078D4;
+    color: white;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+    line-height: 47px;
+    border-radius: 0 4px 4px 0;
+    font-size: 22px;
+}
+
+#recents{
+    display: flex;
+    justify-content: center;
+    margin: 9px 0 0 0;
+}
+
+#recents a, #recents .pontos{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-size: 13px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+#recents a:hover{
+    text-decoration: underline;
+}
